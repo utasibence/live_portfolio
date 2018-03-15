@@ -1,0 +1,280 @@
+body {
+  width: 100%;
+  align-items: center;
+  line-height: 1.25;
+  font-family: 'Hind', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body, p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 3em auto;
+  max-width: 960px;
+}
+
+.wrapper, .main-intro, footer, .about_me {
+  padding: 0 1em;
+}
+
+.main-intro h2, .about_me h3 {
+  font-weight: 300;
+  font-size: 1.25em;
+  color: slategray;
+}
+
+.main-intro .job {
+  text-decoration: underline;
+}
+
+.link_intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link_intro a {
+  color: #42b4d6;
+  text-decoration: none;
+}
+
+.link_intro a:hover {
+  color: #2dacd1;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.project {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 300px;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+  margin: 1.2em;
+  border-radius: .5em;
+  transition: transform .5s;
+}
+
+
+.project p {
+  font-size: 1em;
+  font-weight: 500;
+  backface-visibility: hidden;
+}
+
+.project a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.treehouse {
+  background: #5FCF80;
+}
+
+.git {
+  background: #181717;
+}
+
+.linkedin {
+  background-color: #0077B5;
+}
+
+.portfolio {
+  background: mediumpurple;
+}
+
+.cv {
+  background: tomato;
+}
+
+.cv2 {
+  background: deepskyblue;
+  height: 50px;
+  width: 150px;
+}
+
+.szaszbutor {
+  background: url(img/szaszbutor.jpg) center;
+}
+
+.szaszbutor_site {
+  background-color: #207851;
+}
+
+.about_me h3 {
+  color: slategrey;
+}
+
+.about_me ul {
+  padding-left: 25px;
+}
+
+.about_me li {
+  font-size: 1em;
+}
+
+.about_me li.first_li {
+  margin: 15px 0;
+}
+
+.about_me li.sec_li {
+  list-style: none;
+}
+
+h3.experience {
+  margin-top: 75px;
+  color: slategray;
+  font-weight: 400;
+}
+
+i.fa-building {
+  color: tomato;
+}
+
+i.fa-graduation-cap {
+  color: navy;
+}
+
+i.fa-lightbulb {
+  color: gold;
+}
+
+i.fa-check-circle {
+  color: lime;
+}
+
+.about_me ul,
+.about_me ol {
+  color: #333333;
+}
+
+.about_me h3 a.treehouse_link,
+.main-intro h2 a.treehouse_link {
+  color: #5FCF80;
+}
+
+.about_me h3 a.portfolio_link {
+  color: mediumpurple;
+}
+
+.about_me h3 a.resume_link {
+  color: deepskyblue;
+}
+
+.treehouse_link:hover,
+.portfolio_link:hover,
+.resume_link:hover,
+.treehouse_link:hover {
+  text-decoration: none;
+}
+
+.project_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.szaszbutor_site_img {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+footer {
+  margin-top: 2em;
+  color: slategray;
+  max-width: 960px;
+}
+
+footer a {
+  color: slategray;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.love {
+  color: red;
+  margin: 0 .25em;
+}
+
+.love:hover {
+  color: slategrey;
+}
+
+.email {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+
+  .wrapper {
+    margin: 3em auto;
+    min-width: 500px;
+  }
+
+  .about_me ul {
+    padding-left: 25px;
+  }
+
+  .about_me li {
+    font-size: 1.2em;
+  }
+
+  .project {
+    flex: 1 200px;
+  }
+
+  .cv2 {
+    height: 50px;
+    width: 300px;
+  }
+
+  .szaszbutor_site_img {
+    width: 80%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+  }
+
+  .email {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-intro h2, .about_me h3 {
+    font-size: 2em;
+  }
+
+  .szaszbutor_site_img {
+    width: 70%;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  }
+
+  .about_me ul {
+    padding-left: 35px;
+  }
+
+  .project {
+    flex: 1 150px;
+  }
+  .project:hover {
+    transform: scale(1.1);
+  }
+}
