@@ -108,8 +108,16 @@ body, p {
   background: url(img/szaszbutor.jpg) center;
 }
 
+.terminal {
+  background: url(img/terminal.jpg) center;
+}
+
 .szaszbutor_site {
   background-color: #207851;
+}
+
+.terminal_site {
+  background-color: #3068A2;
 }
 
 .about_me h3 {
