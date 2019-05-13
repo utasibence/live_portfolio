@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  border-top: 3px solid #8c0014;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 1500px;
+  margin: 10px auto;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul a {
+  display: block;
+  margin: 15px;
+  width: 57px;
+  height: 57px;
+}
+
+header ul li {
+  list-style: none;
+  width: 57px;
+  height: 57px;
+  padding: 5px;
+}
+
+header ul li:active {
+  box-shadow: inset 0 0 10px hsla(0, 0%, 0%, 0.2);
+  border-radius: 15px;
+}
+
+header ul li:hover {
+  border-bottom: 3px solid #8c0014;
+  box-sizing: content-box;
+  background-repeat: no-repeat;
+}
+
+.selected {
+  border-bottom: 3px solid #8c0014;
+  box-sizing: content-box;
+  background-repeat: no-repeat;
+}
+
+header li.home {
+  background-image: url(img/favicon-nagy.png);
+  background-size: 57px 57px;
+  border-radius: 50%;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+header li.home:active {
+  box-shadow: none;
+  border-radius: 50%;
+  transition: 0ms;
+}
+
+header li.home:hover {
+  border-bottom: none;
+  box-sizing: border-box;
+}
+
+header li.zsakos {
+  background-image: url(img/zsakos.png);
+}
+
+header li.zsaknelkuli {
+  background-image: url(img/zsaknelkuli.png);
+}
+
+header li.kezi {
+  background-image: url(img/kezi.png);
+}
+
+header li.robot {
+  background-image: url(img/robot.png);
+}
+
+header li.tartozek {
+  background-image: url(img/tartozek.png);
+}
+
+main {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+iframe {
+  max-width: 100%;
+  margin: 20px auto;
+  display: block;
+}
+
+h1.kiemelt {
+  margin-top: 15px;
+}
+
+.arnyek {
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-top: 3px solid #2B292A;
+  margin-top: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.arnyek h1,
+.arnyek h2,
+.porszivo h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.arnyek p,
+.porszivo p {
+  padding: 10px
+}
+
+.red-border {
+  border-color: #8c0014;
+}
+
+.paros {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arnyek3 {
+  width: 49%;
+  float: left;
+}
+
+.porszivo {
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-top: 15px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.tartozekok {
+  width: 32%;
+}
+
+.tartozekok h3,
+.tartozekok p {
+  text-align: center;
+}
+
+.porszivo h2 {
+  text-align: center;
+}
+
+.porszivo ul {
+  margin: 0 10px 10px 10px;
+  padding: 0 10px 10px 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  clear: both;
+  color: #a4a5a4;
+  margin-top: auto;
+  padding: 3px;
+}
+
+footer .footer-link {
+  height: 92px;
+  width: 75px;
+}
+
+/* ---------- BUTTON STYLES ---------- */
+
+i.fa-chevron-circle-up {
+  /* VISSZA IKON */
+  color: #8c0014;
+  font-size: 57px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 50%;
+}
+
+i.fa-shopping-cart {
+  color: #8c0014;
+  font-size: 57px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 50%;
+}
+
+button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background: #8c0014;
+  width: 80px;
+  height: 37px;
+  border-radius: 15px;
+  border: none;
+  border: 2px solid white;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  cursor: pointer;
+}
+
+button:active,
+i:active {
+  box-shadow: none;
+}
+
+/* ---------- IMG STYLES ---------- */
+
+.main-img {
+  width: 100%;
+}
+
+.porszivo-img,
+.tartozek-img {
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.tartozek-img {
+  height: 215px;
+}
+
+.eco-img {
+  width: 50px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}

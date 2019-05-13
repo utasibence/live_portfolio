@@ -112,12 +112,20 @@ body, p {
   background: url(img/terminal.jpg) center;
 }
 
+.miele {
+  background: url(img/miele.jpg) right center;
+}
+
 .szaszbutor_site {
   background-color: #207851;
 }
 
 .terminal_site {
   background-color: #3068A2;
+}
+
+.miele_site {
+  background-color: #8C0014;
 }
 
 .about_me h3 {
@@ -144,22 +152,6 @@ h3.experience {
   margin-top: 75px;
   color: slategray;
   font-weight: 400;
-}
-
-i.fa-building {
-  color: tomato;
-}
-
-i.fa-graduation-cap {
-  color: navy;
-}
-
-i.fa-lightbulb {
-  color: gold;
-}
-
-i.fa-check-circle {
-  color: lime;
 }
 
 .about_me ul,
